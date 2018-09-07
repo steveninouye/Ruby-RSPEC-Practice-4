@@ -8,7 +8,7 @@
 #
 #     ./friend_spec.rb:3: uninitialized constant Friend (NameError)
 #
-# Fix this by opening `friend.rb` and creating an empty class:
+# Fix this by opening `00_hello_friend.rb` and creating an empty class:
 #
 #     class Friend
 #     end
@@ -21,14 +21,14 @@
 #
 #     NoMethodError in 'Friend says hello'
 #     undefined method `greeting' for #<Friend:0x1180f3c>
-#     ./friend_spec.rb:5:
+#     ./00_hello_friend_spec.rb:5:
 #
 # This means that while it found the file, and it found the class, it
 # couldn't find the method named "greeting".
 #
 # ## Define the "greeting" method
 #
-# In `friend.rb`, add the following inside the class (before the "end").
+# In `00_hello_friend.rb`, add the following inside the class (before the "end").
 #
 #     def greeting
 #     end
@@ -42,7 +42,7 @@
 #     'Friend says hello' FAILED
 #     expected: "Hello!",
 #          got: nil (using ==)
-#     ./friend_spec.rb:5:
+#     ./00_hello_friend_spec.rb:5:
 #
 # This means that there is a method, but it's not returning anything!
 # ("nil" is the Ruby way of saying "not anything".)
@@ -66,7 +66,7 @@
 #     'Friend says hello' FAILED
 #     expected: "Hello!",
 #          got: "whuh?" (using ==)
-#     ./friend_spec.rb:5:
+#     ./00_hello_friend_spec.rb:5:
 #
 # Correct this by changing "whuh?" to "Hello!". Save it. Run the test
 # again.
